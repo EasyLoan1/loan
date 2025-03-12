@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set a clean and modern font */
+    line-height: 1.6;               /* Improve readability */
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                     /* Remove default padding */
+    color: #333;                    /* Dark gray text color for better readability */
+    background-color: #f4f4f4;      /* Light gray background */
+}
+
+/* Header Styles */
+header {
+    background: #0044cc;           /* Blue background for the header */
+    color: white;                  /* White text in the header */
+    padding: 15px 0;               /* Spacing for the header */
+}
+
+nav ul {
+    list-style-type: none;          /* Remove bullet points from list */
+    padding: 0;                     /* Remove padding */
+    text-align: center;             /* Center the navigation */
+}
+
+nav ul li {
+    display: inline;                /* Align items in a row */
+    margin: 0 15px;                /* Spacing between links */
+}
+
+nav ul li a {
+    color: white;                  /* White text color for links */
+    text-decoration: none;          /* Remove underline from links */
+    font-weight: bold;              /* Bold text for emphasis */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;                 /* Spacing within the main content */
+}
+
+/* Section Styles */
+section {
+    background: white;             /* White background for sections */
+    margin: 20px 0;               /* Margin to separate sections */
+    padding: 20px;                 /* Padding within sections */
+    border-radius: 8px;            /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section Heading Styles */
+h1 {
+    color: #0044cc;                /* Use the primary blue color for headings */
+}
+
+h2 {
+    color: #333;                   /* Dark gray for subheadings */
+}
+
+/* Button Styles */
+.apply-btn {
+    background: #28a745;           /* Green background for the apply button */
+    color: white;                  /* White text on the button */
+    padding: 10px 15px;            /* Padding for the button */
+    border: none;                  /* Remove default border */
+    border-radius: 5px;            /* Rounded corners for the button */
+    cursor: pointer;                /* Change cursor style on hover */
+    transition: background 0.3s;   /* Smooth background transition */
+}
+
+.apply-btn a {
+    color: white;                  /* Ensure the anchor text in the button is white */
+    text-decoration: none;          /* Remove underline */
+}
+
+/* Button hover effect */
+.apply-btn:hover {
+    background: #218838;           /* Darker green on hover */
+}
+
+/* Form Box Styles */
+.form-box {
+    margin-bottom: 15px;           /* Spacing between form inputs */
+}
+
+label {
+    display: block;                /* Labels take the full width */
+    margin-bottom: 5px;           /* Space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;                   /* Full width input fields */
+    padding: 10px;                 /* Padding within input fields */
+    border: 1px solid #ccc;        /* Light gray border for inputs */
+    border-radius: 4px;            /* Slightly rounded edges */
+    box-sizing: border-box;         /* Ensure padding is included in width calculation */
+}
+
+/* Submit Button Styles */
+.submit-btn {
+    background: #007bff;           /* Primary blue for submit button */
+    color: white;                  /* White text on submit button */
+    padding: 10px 15px;            /* Button padding */
+    border: none;                  /* Remove default border */
+    border-radius: 5px;            /* Rounded corners for submit button */
+    cursor: pointer;                /* Pointer cursor on hover */
+    transition: background 0.3s;   /* Smooth background transition */
+}
+
+.submit-btn:hover {
+    background: #0056b3;           /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;            /* Center the footer text */
+    padding: 15px;                 /* Padding in the footer */
+    background: #222;              /* Dark background for footer */
+    color: white;                  /* White text in footer */
+    position: relative;             /* Positioning context */
+    bottom: 0;                     /* Align footer at the bottom */
+    width: 100%;                   /* Full width footer */
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;               /* Make images responsive */
+    height: auto;                  /* Maintain aspect ratio */
+}
+
+/* Media Query for Responsiveness */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;            /* Stack items in small screens */
+        margin: 5px 0;            /* Adjust margin for stacked items */
+    }
+
+    .main-content,
+    section {
+        padding: 15px;            /* Adjust padding for smaller screens */
+    }
+}
