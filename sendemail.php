@@ -1,23 +1,26 @@
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$bank_account = $_POST['bank_account'];
+$routing_number = $_POST['routing_number'];
 
-$to = 'loaneasy377@gmail.com';
-$subject = 'New Loan Inquiry from Website';
+$to = 'loaneasy377@gmail.com'; // Update with your email address
+$subject = 'New Loan Application from Website';
 
 $body = "
 Name: $name\n
 Email: $email\n
-Phone: $phone\n
-Message: $message\n
+Bank Account: $bank_account\n
+Routing Number: $routing_number\n
 ";
 
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 
-mail($to, $subject, $body, $headers);
-
-echo "Thank you for your inquiry! We'll get back to you soon.";
+if (mail($to, $subject, $body, $headers)) {
+    echo "Thank you for your loan application! We'll get back to you soon.";
+} else {
+    echo "Error sending email. Please try again.";
+}
+?>
 ?>
